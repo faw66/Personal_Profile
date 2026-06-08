@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hobbies — Fauzi</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="brand-dot"></span>
+      <span>Fauzi</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About Me</a></li>
+      <li><a href="favorit.html" class="nav-link">My Favorit</a></li>
+      <li><a href="hobbies.html" class="nav-link active">Hobbies</a></li>
+      <li><a href="funfact.html" class="nav-link">Fun Fact</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-hero">
+    <div class="hero-bg-orb orb1"></div>
+    <div class="hero-bg-orb orb2"></div>
+    <div class="page-hero-inner">
+      <span class="page-label">Aktivitas Favoritku</span>
+      <h1 class="page-title">Hobbies</h1>
+    </div>
+  </section>
+
+  <!-- READING NOVELS -->
+  <section class="hobby-section section-pad">
+    <div class="container">
+      <div class="hobby-header fade-in">
+        <div>
+          <span class="section-label">Literasi</span>
+          <h2 class="section-title">Reading Novels</h2>
+        </div>
+      </div>
+      <div class="carousel-wrapper book-carousel">
+        <button class="carousel-btn prev" id="novelPrev">&#8592;</button>
+        <div class="carousel-track-outer">
+          <div class="carousel-track" id="novelTrack">
+            <div class="book-card">
+              <div class="book-cover">
+                <img src="../assets/images/novel1.jpg" alt="Novel 1" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="photo-placeholder" style="display:none">📖</div>
+              </div>
+              <p class="book-title">Judul Novel</p>
+              <p class="book-author">Penulis</p>
+            </div>
+            <div class="book-card">
+              <div class="book-cover">
+                <img src="../assets/images/novel2.jpg" alt="Novel 2" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="photo-placeholder" style="display:none">📚</div>
+              </div>
+              <p class="book-title">Judul Novel</p>
+              <p class="book-author">Penulis</p>
+            </div>
+            <div class="book-card">
+              <div class="book-cover">
+                <img src="../assets/images/novel3.jpg" alt="Novel 3" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="photo-placeholder" style="display:none">📝</div>
+              </div>
+              <p class="book-title">Judul Novel</p>
+              <p class="book-author">Penulis</p>
+            </div>
+            <div class="book-card">
+              <div class="book-cover">
+                <img src="../assets/images/novel4.jpg" alt="Novel 4" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="photo-placeholder" style="display:none">🔖</div>
+              </div>
+              <p class="book-title">Judul Novel</p>
+              <p class="book-author">Penulis</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn next" id="novelNext">&#8594;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLAYING GAMES -->
+  <section class="hobby-section section-pad alt-bg">
+    <div class="container">
+      <div class="hobby-header" style="margin-bottom: 1.5rem;">
+        <div>
+          <span class="section-label">Gaming</span>
+          <h2 class="section-title">Playing Games</h2>
+        </div>
+      </div>
+      
+      <div class="flex-accordion">
+        <div class="accordion-item">
+          <img src="../assets/images/game1.jpg" alt="Game 1" onerror="this.src=''; this.parentElement.style.background='#1a1525';">
+          <div class="accordion-overlay">
+            <h3 class="accordion-title">Action Games</h3>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <img src="../assets/images/game2.jpg" alt="Game 2" onerror="this.src=''; this.parentElement.style.background='#1a1525';">
+          <div class="accordion-overlay">
+            <h3 class="accordion-title">RPG Games</h3>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <img src="../assets/images/game3.jpg" alt="Game 3" onerror="this.src=''; this.parentElement.style.background='#1a1525';">
+          <div class="accordion-overlay">
+            <h3 class="accordion-title">Strategy Games</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- READING MANHWA -->
+  <section class="hobby-section section-pad">
+    <div class="container">
+      <div class="hobby-header" style="margin-bottom: 1.5rem;">
+        <div>
+          <span class="section-label">Komik</span>
+          <h2 class="section-title">Reading Manhwa</h2>
+        </div>
+      </div>
+      
+      <div class="flex-accordion">
+        <div class="accordion-item">
+          <img src="../assets/images/manhwa1.jpg" alt="Manhwa 1" onerror="this.src=''; this.parentElement.style.background='#1a1525';">
+          <div class="accordion-overlay">
+            <h3 class="accordion-title">Action Fantasy</h3>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <img src="../assets/images/manhwa2.jpg" alt="Manhwa 2" onerror="this.src=''; this.parentElement.style.background='#1a1525';">
+          <div class="accordion-overlay">
+            <h3 class="accordion-title">Romance</h3>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <img src="../assets/images/manhwa3.jpg" alt="Manhwa 3" onerror="this.src=''; this.parentElement.style.background='#1a1525';">
+          <div class="accordion-overlay">
+            <h3 class="accordion-title">Slice of Life</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="social-links">
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+      <a href="https://github.com" target="_blank">GitHub</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      <a href="https://wa.me" target="_blank">WhatsApp</a>
+    </div>
+    <p>© 2025 Fauzi — Dibuat dengan ❤️</p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

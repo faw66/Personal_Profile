@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me — Fauzi</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="brand-dot"></span>
+      <span>Fauzi</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link active">About Me</a></li>
+      <li><a href="favorit.html" class="nav-link">My Favorit</a></li>
+      <li><a href="hobbies.html" class="nav-link">Hobbies</a></li>
+      <li><a href="funfact.html" class="nav-link">Fun Fact</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="hero-bg-orb orb1"></div>
+    <div class="hero-bg-orb orb2"></div>
+    <div class="page-hero-inner">
+      <span class="page-label">Kenali Lebih Dekat</span>
+      <h1 class="page-title">About Me</h1>
+    </div>
+  </section>
+
+  <!-- SELF DESCRIPTION -->
+  <section class="about-intro section-pad">
+    <div class="container two-col">
+      <div class="about-text fade-in">
+        <span class="section-label">Deskripsi Diri</span>
+        <h2>Siapa Aku?</h2>
+        <p>Halo! Aku Fauzi. Tulis deskripsi singkat tentang dirimu di sini — latar belakang, kepribadian, passion, dan apa yang kamu kejar dalam hidup. Ceritakan apa yang membuat kamu unik!</p>
+        <p>Aku percaya bahwa setiap pengalaman membentuk kita menjadi pribadi yang lebih baik. Saat ini aku sedang belajar dan berkembang di bidang teknologi.</p>
+      </div>
+      <div class="about-photo-wrap fade-in delay-1">
+        <div class="photo-frame small">
+          <img src="../assets/images/profile.jpg" alt="Foto Fauzi" onerror="this.src=''; this.parentElement.style.background='#1a1525';">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAMILY -->
+  <section class="family-section section-pad alt-bg">
+    <div class="container">
+      <span class="section-label">Keluargaku</span>
+      <h2 class="section-title">Family</h2>
+
+      <!-- Orang Tua -->
+      <div class="family-block fade-in">
+        <h3 class="family-sub">Orang Tua</h3>
+        <div class="parents-wrap">
+          <div class="parent-card">
+            <div class="parent-photo">
+              <img src="../assets/images/ibu.jpg" alt="Ibu" onerror="this.src=''; this.parentElement.style.background='#1a1525';">
+            </div>
+            <p class="parent-label">Ibu</p>
+          </div>
+          <div class="parent-card">
+            <div class="parent-photo">
+              <img src="../assets/images/bapak.jpg" alt="Bapak" onerror="this.src=''; this.parentElement.style.background='#1a1525';">
+            </div>
+            <p class="parent-label">Bapak</p>
+          </div>
+          <div class="parents-desc">
+            <p>Aku anak dari pasangan yang hebat. Tuliskan sesuatu yang ingin kamu bagikan tentang orang tuamu di sini — cerita singkat, hal yang paling kamu syukuri, atau nilai yang mereka ajarkan.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Saudara Carousel -->
+      <div class="family-block fade-in delay-1">
+        <h3 class="family-sub">Saudara</h3>
+        <div class="carousel-wrapper small-carousel">
+          <button class="carousel-btn prev" id="saudaraPrev">&#8592;</button>
+          <div class="carousel-track-outer">
+            <div class="carousel-track" id="saudaraTrack">
+              <div class="sibling-card">
+                <div class="sibling-photo">
+                  <img src="../assets/images/saudara1.jpg" alt="Saudara 1" onerror="this.src=''; this.parentElement.style.background='#1a1525';">
+                </div>
+                <p>Nama Saudara</p>
+              </div>
+              <div class="sibling-card">
+                <div class="sibling-photo">
+                  <img src="../assets/images/saudara2.jpg" alt="Saudara 2" onerror="this.src=''; this.parentElement.style.background='#1a1525';">
+                </div>
+                <p>Nama Saudara</p>
+              </div>
+              <div class="sibling-card">
+                <div class="sibling-photo">
+                  <img src="../assets/images/saudara3.jpg" alt="Saudara 3" onerror="this.src=''; this.parentElement.style.background='#1a1525';">
+                </div>
+                <p>Nama Saudara</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-btn next" id="saudaraNext">&#8594;</button>
+        </div>
+      </div>
+
+      <!-- Family Photo -->
+      <div class="family-block fade-in" style="margin-top: 4rem;">
+        <h3 class="family-sub text-center" style="text-align: center;">Foto Keluarga Bersama</h3>
+        <div class="family-photo">
+          <img src="../assets/images/family.jpg" alt="Family Photo" onerror="this.src=''; this.parentElement.style.background='#1a1525';">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="social-links">
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+      <a href="https://github.com" target="_blank">GitHub</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      <a href="https://wa.me" target="_blank">WhatsApp</a>
+    </div>
+    <p>© 2025 Fauzi — Web Developer Portfolio</p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

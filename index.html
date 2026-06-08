@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fauzi — Personal Website</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="brand-dot"></span>
+      <span>Personal Profile</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link active">Home</a></li>
+      <li><a href="pages/about.html" class="nav-link">About Me</a></li>
+      <li><a href="pages/favorit.html" class="nav-link">My Favorit</a></li>
+      <li><a href="pages/hobbies.html" class="nav-link">Hobbies</a></li>
+      <li><a href="pages/funfact.html" class="nav-link">Fun Fact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-bg-orb orb1"></div>
+    <div class="hero-bg-orb orb2"></div>
+    <div class="hero-bg-orb orb3"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name">Fauzi</h1>
+        <div class="hero-quote-wrap">
+          <span class="quote-mark">"</span>
+          <p class="hero-quote" id="rotatingQuote">Setiap langkah kecil adalah awal dari perjalanan besar.</p>
+          <span class="quote-mark">"</span>
+        </div>
+        <div class="hero-cta">
+          <a href="pages/about.html" class="btn-primary">Kenali Saya</a>
+          <a href="pages/funfact.html" class="btn-secondary">Fun Facts</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="photo-frame">
+          <img src="assets/images/profile.jpg" alt="Foto Fauzi" id="heroPhoto" onerror="this.style.display='none'; document.getElementById('photoPlaceholder').style.display='flex'">
+          <div class="photo-placeholder" id="photoPlaceholder" style="background: #1a1525; display: flex; align-items: center; justify-content: center;">
+            <p style="font-size: 0.85rem; color: #aaa;">Profile<br>Photo</p>
+          </div>
+        </div>
+        <div class="photo-deco"></div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===== PROJECT PREVIEW CAROUSEL ===== -->
+  <section class="section-projects">
+    <div class="section-header">
+      <span class="section-label">Sorotan</span>
+      <h2 class="section-title">Projek yang Pernah Dibuat</h2>
+    </div>
+    <div class="carousel-wrapper">
+      <button class="carousel-btn prev" id="projPrev">&#8592;</button>
+      <div class="carousel-track-outer">
+        <div class="carousel-track" id="projTrack">
+          <div class="project-card">
+            <div class="project-card-img">
+              <img src="assets/images/project1.jpg" alt="Project AMO" onerror="this.src=''; this.parentElement.style.background='#1a1525';">
+            </div>
+            <div class="project-card-body">
+              <span class="proj-tag">AMO</span>
+              <h3>Project AMO</h3>
+              <p>Deskripsi singkat proyek ini.</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-card-img">
+              <img src="assets/images/project2.jpg" alt="Promite" onerror="this.src=''; this.parentElement.style.background='#1a1525';">
+            </div>
+            <div class="project-card-body">
+              <span class="proj-tag">Web</span>
+              <h3>Promite</h3>
+              <p>Deskripsi singkat proyek ini.</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-card-img">
+              <img src="assets/images/project3.jpg" alt="File Detector" onerror="this.src=''; this.parentElement.style.background='#1a1525';">
+            </div>
+            <div class="project-card-body">
+              <span class="proj-tag">Tools</span>
+              <h3>File Detector</h3>
+              <p>Deskripsi singkat proyek ini.</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-card-img">
+              <img src="assets/images/project4.jpg" alt="Project 4" onerror="this.src=''; this.parentElement.style.background='#1a1525';">
+            </div>
+            <div class="project-card-body">
+              <span class="proj-tag">App</span>
+              <h3>Project Lainnya</h3>
+              <p>Deskripsi singkat proyek ini.</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-card-img">
+              <img src="assets/images/project5.jpg" alt="Project 5" onerror="this.src=''; this.parentElement.style.background='#1a1525';">
+            </div>
+            <div class="project-card-body">
+              <span class="proj-tag">Design</span>
+              <h3>Design Project</h3>
+              <p>Deskripsi singkat proyek ini.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-btn next" id="projNext">&#8594;</button>
+    </div>
+
+
+  </section>
+
+  <!-- ===== QUICK LINKS / TEASE ===== -->
+  <section class="section-tease">
+    <div class="tease-grid">
+      <a href="pages/about.html" class="tease-card">
+        <div class="tease-icon" style="font-family: var(--font-display); font-size: 2rem; color: var(--clr-purple-400);">01</div>
+        <h3>About Me</h3>
+        <p>Keluarga, latar belakang & deskripsi diri</p>
+        <span class="tease-arrow">→</span>
+      </a>
+      <a href="pages/favorit.html" class="tease-card">
+        <div class="tease-icon" style="font-family: var(--font-display); font-size: 2rem; color: var(--clr-purple-400);">02</div>
+        <h3>My Favorit</h3>
+        <p>Musik, makanan & minuman kesukaan</p>
+        <span class="tease-arrow">→</span>
+      </a>
+      <a href="pages/hobbies.html" class="tease-card">
+        <div class="tease-icon" style="font-family: var(--font-display); font-size: 2rem; color: var(--clr-purple-400);">03</div>
+        <h3>Hobbies</h3>
+        <p>Aktivitas menarik di waktu luang</p>
+        <span class="tease-arrow">→</span>
+      </a>
+      <a href="pages/funfact.html" class="tease-card">
+        <div class="tease-icon" style="font-family: var(--font-display); font-size: 2rem; color: var(--clr-purple-400);">04</div>
+        <h3>Fun Fact</h3>
+        <p>Fakta unik tentang perjalanan saya</p>
+        <span class="tease-arrow">→</span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="social-links">
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+      <a href="https://github.com" target="_blank">GitHub</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      <a href="https://wa.me" target="_blank">WhatsApp</a>
+    </div>
+    <p>© 2025 Fauzi — Dibuat dengan ❤️</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
