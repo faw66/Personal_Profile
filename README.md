@@ -1,116 +1,86 @@
-# 🌐 Personal Website
+# Personal Website Portfolio
 
-Website profil pribadi dengan tema ungu tua, hitam, dan putih.
+Website portofolio pribadi yang profesional, interaktif, dan dirancang dengan estetika tema gelap modern. Dibangun dengan fokus pada prinsip UI/UX tingkat lanjut, menampilkan efek *glassmorphism*, tata letak *flex-accordion* interaktif, dan desain yang sangat responsif.
 
 ---
 
-## 📁 Struktur File
+## Struktur Proyek
 
-```
-fauzi-website/
+```text
+Personal_Web/
 ├── index.html          
-├── about.html         
-├── favorit.html        
-├── hobbies.html        
-├── funfact.html        
-├── css/
-│   └── style.css
-├── js/
-│   └── main.js
-└── assets/
-    └── images/         
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── main.js
+│   └── images/         
+└── pages/
+    ├── about.html         
+    ├── hobbies.html        
+    └── funfact.html        
 ```
 
 ---
 
-## 🖼️ Panduan Menambahkan Gambar
+## Konfigurasi Aset Gambar
 
-Simpan semua gambar di folder `assets/images/`. Nama file harus tepat:
+Tempatkan seluruh aset gambar di dalam direktori `assets/images/`. Pastikan penamaan file sama persis dengan spesifikasi di bawah ini (huruf kecil semua tanpa spasi).
 
-### Foto Diri (muncul di Landing Page & About Me)
-| File | Keterangan |
-|------|-----------|
-| `profile.jpg` | Foto dirimu (ukuran ideal: 400×500px) |
+### Landing Page & About
+- `profile.jpg` - Foto profil utama
 
-### Halaman About Me
-| File | Keterangan |
-|------|-----------|
-| `ibu.jpg` | Foto ibu |
-| `bapak.jpg` | Foto bapak |
-| `saudara1.jpg` | Foto saudara 1 |
-| `saudara2.jpg` | Foto saudara 2 |
-| `saudara3.jpg` | Foto saudara 3 |
-
-### Halaman My Favorit
-| File | Keterangan |
-|------|-----------|
-| `food1.jpg` ~ `food4.jpg` | Foto makanan/minuman favorit |
-| `music1.jpg` ~ `music4.jpg` | Cover album/artis favorit |
-| `film1.jpg` ~ `film2.jpg` | Poster film atau anime favorit |
+### Halaman About (Profil & Favorit)
+- `food1.jpg` ~ `food4.jpg` - Preferensi kuliner (Tampil dalam Flex-Accordion)
+- `music1.jpg` ~ `music4.jpg` - Sampul album/artis (Tampil dalam Marquee Berkelanjutan)
+- `film1.jpg` ~ `film2.jpg` - Poster film atau anime
 
 ### Halaman Hobbies
-| File | Keterangan |
-|------|-----------|
-| `novel1.jpg` ~ `novel4.jpg` | Cover novel yang pernah dibaca |
-| `game1.jpg` ~ `game3.jpg` | Cover/screenshot game favorit |
-| `manhwa1.jpg` ~ `manhwa3.jpg` | Cover manhwa favorit |
+- `novel1.jpg` ~ `novel4.jpg` - Sampul novel
+- `game1.jpg` ~ `game3.jpg` - Media permainan video (Tampil dalam Flex-Accordion)
+- `manhwa1.jpg` ~ `manhwa3.jpg` - Sampul manhwa (Tampil dalam Flex-Accordion)
 
 ### Landing Page (Projek)
-| File | Keterangan |
-|------|-----------|
-| `project1.jpg` ~ `project5.jpg` | Screenshot atau thumbnail projek |
+- `project1.jpg` ~ `project5.jpg` - Tangkapan layar proyek atau *thumbnail* aplikasi
 
 ### Halaman Fun Fact
-| File | Keterangan |
-|------|-----------|
-| `funfact1.jpg` ~ `funfact6.jpg` | Gambar pendukung fun fact |
+- `funfact1.jpg` ~ `funfact6.jpg` - Gambar pendukung untuk fakta personal
 
-> **Catatan:** Jika gambar belum ditambahkan, website akan otomatis menampilkan emoji placeholder yang tetap terlihat rapi.
+**Catatan Implementasi Fallback:** Jika file gambar tidak tersedia, sistem akan mengeksekusi logika penanganan (*fallback logic*). Ikon gambar yang rusak (*broken image*) akan disembunyikan secara otomatis dan diganti dengan blok *placeholder* berwarna gelap elegan untuk menjaga integritas tata letak dan pengalaman pengguna.
 
 ---
 
-## ✏️ Cara Edit Konten
+## Panduan Kustomisasi Konten
 
-Buka file HTML terkait dan cari bagian yang perlu diubah:
+Modifikasi file HTML atau JS terkait menggunakan teks editor untuk memperbarui teks konten:
 
-- **Nama:** Cari `Fauzi` di `index.html` dan `about.html`
-- **Kata-kata motivasi:** Edit array `quotes` di `js/main.js`
-- **Nama projek:** Edit bagian `project-card` di `index.html`
-- **Deskripsi diri:** Edit paragraf di `about.html`
-- **Nama keluarga:** Edit `.parent-label` dan `.sibling-card` di `about.html`
-- **Nama makanan/musik/film:** Edit teks di `favorit.html`
-- **Nama novel/game/manhwa:** Edit teks di `hobbies.html`
-- **Fun facts:** Edit teks di `funfact.html`
-- **Rating film:** Ubah class `filled` pada tag `.star` di `favorit.html`
-
----
-
-## 🚀 Deploy ke GitHub Pages
-
-1. Buat repository baru di GitHub (misal: `fauzi-website`)
-2. Upload semua file ke repository
-3. Pergi ke **Settings → Pages**
-4. Pilih branch `main`, folder `/ (root)`
-5. Klik **Save** — website akan live di `https://username.github.io/fauzi-website`
-
-## 🚀 Deploy ke Netlify
-
-1. Drag & drop folder `fauzi-website` ke [netlify.com/drop](https://app.netlify.com/drop)
-2. Website langsung live dengan URL acak
-3. Bisa ubah nama domain di dashboard Netlify
+- **Nama & Gelar:** Temukan elemen target di `index.html` dan `pages/about.html`
+- **Kutipan Dinamis:** Modifikasi *array* `quotes` di dalam `assets/js/main.js`
+- **Detail Projek:** Edit kartu-kartu yang ada di `index.html`
+- **Deskripsi Pribadi:** Perbarui paragraf di `pages/about.html`
+- **Konten Favorit (Kuliner, Musik, Film):** Perbarui teks di `pages/about.html`
+- **Rating Film:** Sesuaikan distribusi kelas `filled` pada tag `<span class="star">` di `pages/about.html`
+- **Konten Hobbies:** Perbarui teks di `pages/hobbies.html`
+- **Fun Facts:** Modifikasi tag paragraf di `pages/funfact.html`
 
 ---
 
-## 🎨 Fitur Website
+## Deployment & Hosting
 
-- ✅ 5 halaman lengkap sesuai desain sketch
-- ✅ Carousel gambar kanan/kiri di setiap section
-- ✅ Carousel bawah bergerak berlawanan arah (marquee)
-- ✅ Navbar sticky dengan mobile hamburger menu
-- ✅ Responsive — otomatis menyesuaikan HP
-- ✅ Animasi fade-in saat scroll
-- ✅ Efek hover tilt pada card
-- ✅ Quote rotator otomatis
-- ✅ Gradasi warna ungu tua yang elegan
-- ✅ Font Playfair Display + DM Sans
-- ✅ Placeholder otomatis jika gambar belum ada
+Proyek ini terdiri dari kumpulan file statis dan siap untuk langsung dipublikasikan.
+1. **Netlify:** Pindahkan (*drag and drop*) direktori `Personal_Web` ke layanan Netlify Drop.
+2. **GitHub Pages:** Unggah (*push*) repositori ini ke GitHub dan aktifkan fitur GitHub Pages di menu pengaturan repositori.
+
+---
+
+## Implementasi UI/UX Utama
+
+- **Hierarki Visual Terstruktur:** Menggunakan tipografi `Playfair Display` untuk judul dan `DM Sans` untuk teks paragraf demi memaksimalkan keterbacaan dan kontras gaya.
+- **Interactive Flex-Accordion:** Tata letak grid tingkat lanjut yang diterapkan pada bagian Kuliner, Gaming, dan Manhwa yang akan melebar secara mulus saat kursor diarahkan (*hover*).
+- **Continuous Scrolling Marquee:** Implementasi pengguliran horizontal tak terbatas secara otomatis untuk bagian daftar putar musik.
+- **Premium Micro-Interactions:** Menampilkan *state hover* yang canggih termasuk efek elevasi komponen, pancaran bayangan berpendar (*glowing drop-shadows*), animasi *tilt polaroid 3D*, dan ornamen kaca buram (*backdrop-filter*).
+- **Fluid Responsiveness:** Arsitektur 100% responsif yang memanfaatkan teknologi CSS *Flexbox* dan *Grid* modern, memastikan tata letak tetap utuh dan terstruktur sempurna di lintas perangkat (Desktop, Tablet, dan Mobile).
+- **Smart Fallback Architecture:** Penanganan kesalahan bawaan untuk aset media yang hilang guna mempertahankan estetika visual tanpa interupsi.
+
+---
+© 2025 Fauzi — Web Developer Portfolio
