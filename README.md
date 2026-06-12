@@ -1,6 +1,6 @@
 # Personal Website Portfolio
 
-Website portofolio pribadi yang profesional, interaktif, dan dirancang dengan estetika tema gelap modern. Dibangun dengan fokus pada prinsip UI/UX tingkat lanjut, menampilkan efek *glassmorphism*, tata letak *flex-accordion* interaktif, dan desain yang sangat responsif.
+Website profil pribadi yang profesional, interaktif, dan dirancang dengan estetika tema gelap modern. Dibangun dengan fokus pada prinsip UI/UX tingkat lanjut, menampilkan efek *glassmorphism*, tata letak *flex-accordion* interaktif, dan desain yang sangat responsif.
 
 ---
 
@@ -76,6 +76,7 @@ Proyek ini terdiri dari kumpulan file statis dan siap untuk langsung dipublikasi
 ## Implementasi UI/UX Utama
 
 - **Hierarki Visual Terstruktur:** Menggunakan tipografi `Playfair Display` untuk judul dan `DM Sans` untuk teks paragraf demi memaksimalkan keterbacaan dan kontras gaya.
+- **Uniform Card & Text Truncation:** Menjamin kartu proyek pada halaman utama memiliki ukuran yang selalu seragam secara simetris, terlepas dari panjang teks deskripsi. Dilengkapi dengan fungsionalitas tombol *See More/See Less* otomatis menggunakan komputasi CSS *Line-Clamp* dan validasi tinggi JavaScript.
 - **Interactive Flex-Accordion:** Tata letak grid tingkat lanjut yang diterapkan pada bagian Kuliner, Gaming, dan Manhwa yang akan melebar secara mulus saat kursor diarahkan (*hover*).
 - **Continuous Scrolling Marquee:** Implementasi pengguliran horizontal tak terbatas secara otomatis untuk bagian daftar putar musik.
 - **Premium Micro-Interactions:** Menampilkan *state hover* yang canggih termasuk efek elevasi komponen, pancaran bayangan berpendar (*glowing drop-shadows*), animasi *tilt polaroid 3D*, dan ornamen kaca buram (*backdrop-filter*).
@@ -83,4 +84,4 @@ Proyek ini terdiri dari kumpulan file statis dan siap untuk langsung dipublikasi
 - **Smart Fallback Architecture:** Penanganan kesalahan bawaan untuk aset media yang hilang guna mempertahankan estetika visual tanpa interupsi.
 
 ---
-© 2025 Fauzi — Web Developer Portfolio
+© 2026

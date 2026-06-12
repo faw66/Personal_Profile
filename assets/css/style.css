@@ -527,6 +527,8 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.2; }
   transition: var(--transition);
   cursor: pointer;
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card:hover {
@@ -558,7 +560,12 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.2; }
   background: var(--grad-soft);
 }
 
-.project-card-body { padding: 1.2rem 1.4rem; }
+.project-card-body { 
+  padding: 1.2rem 1.4rem; 
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
 
 .proj-tag {
   font-size: 0.75rem;
@@ -579,9 +586,36 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.2; }
   font-weight: 600;
 }
 
-.project-card-body p {
+.project-desc {
   font-size: 0.85rem;
   color: var(--clr-muted);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex: 1;
+  margin-bottom: 0.5rem;
+}
+
+.project-card.expanded .project-desc {
+  -webkit-line-clamp: unset;
+}
+
+.see-more-btn {
+  background: none;
+  border: none;
+  color: var(--clr-purple-400);
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+  font-weight: 600;
+  margin-top: auto;
+}
+
+.see-more-btn:hover {
+  text-decoration: underline;
+  color: var(--clr-purple-300);
 }
 
 /* ============================================
@@ -1252,6 +1286,7 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.2; }
     transform: translateY(-110%);
     transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     border-bottom: 1px solid var(--clr-border);
+    z-index: 999;
   }
 
   .nav-links.open { transform: translateY(0); }

@@ -302,4 +302,22 @@ document.addEventListener('DOMContentLoaded', () => {
     track.innerHTML = clone + clone;
   });
 
+  /* ---- PROJECT CARD SEE MORE ---- */
+  document.querySelectorAll('.see-more-btn').forEach(btn => {
+    // Hide button if text is not overflowing
+    const desc = btn.previousElementSibling;
+    if (desc && desc.scrollHeight <= desc.clientHeight) {
+      btn.style.display = 'none';
+    }
+
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const card = btn.closest('.project-card');
+      if (!card) return;
+      card.classList.toggle('expanded');
+      btn.textContent = card.classList.contains('expanded') ? 'See Less' : 'See More';
+    });
+  });
+
 });
